@@ -1,0 +1,15 @@
+.news__wrapper .news__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.news__wrapper .news__list .news__wrapper__item {
+  flex: 0 0 calc(33.3% );
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: 3px saddlebrown solid;
+  border-radius: 25px;
+}/*# sourceMappingURL=Sidebar_one_page.module.css.map */

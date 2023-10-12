@@ -1,0 +1,35 @@
+$standart_width: 100%;
+$standart_height: 100%;
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    
+
+    &_image {
+        position: relative;
+        width: 500px;
+        height: 300px;
+
+
+        img {
+            width: $standart_width;
+            height: $standart_height;
+            object-fit: cover;
+        }
+    }
+
+    .enlargedImage {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: $standart_width;
+        height: $standart_height;
+        z-index: 2;
+        transition: transform 0.3s ease-in-out;
+        object-fit: contain;
+        transform: scale(2);
+    }
+}

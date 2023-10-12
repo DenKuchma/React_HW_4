@@ -1,0 +1,23 @@
+$normal_width: 150px;
+$normal_height: 100px; 
+
+.thumbnails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    
+    img{
+        width: $normal_width;
+        height: $normal_height; 
+        cursor: pointer;
+        border-radius: 25px; 
+    }
+
+    &_active{
+        border: 4px solid #1a14c1; 
+        width: $normal_width + 20px !important;
+        height: $normal_height + 20px !important; 
+    }
+}
